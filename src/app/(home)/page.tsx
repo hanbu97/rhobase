@@ -82,7 +82,7 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-x-clip">
       <div className="flex flex-col h-screen">
         <div className="flex-grow flex">
           <div className="w-3/4 flex items-center justify-center pl-20 pr-10 py-10">
