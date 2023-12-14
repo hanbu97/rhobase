@@ -4,7 +4,8 @@ import { useEffect, useRef } from "react";
 import Marquee from "react-fast-marquee";
 import { Calendar } from "lucide-react";
 import Image from "next/image";
-import { StreamlinedExperience } from "@/sections/home/streamlined-experience";
+import { StreamlinedExperience } from "./_sections/streamlined-experience";
+import { Features } from "./_sections/features";
 
 const HomePage = () => {
   const taglineStyle = {
@@ -206,6 +207,7 @@ const HomePage = () => {
         ))}
       </div>
       <StreamlinedExperience />
+      <Features />
     </div>
   );
 };
