@@ -105,17 +105,17 @@ export const HeroBar = () => {
             </a>
           </div>
           <div className="flex-1 flex items-center justify-end space-x-4">
-            <a
+            {/* <a
               href="#"
               className="text-white font-semibold hover:underline self-center"
             >
               Log In
-            </a>
+            </a> */}
             <a
               href="/signup"
-              className="bg-[#66e4b8] text-white px-5 py-2 rounded-full shadow-lg transition duration-300 ease-in-out hover:bg-[#67e2c2]"
+              className="bg-[#66e4b8] text-white font-bold px-5 py-2 rounded-full shadow-lg transition duration-300 ease-in-out hover:bg-[#67e2c2]"
             >
-              Sign up
+              Buidl Now
             </a>
           </div>
         </nav>

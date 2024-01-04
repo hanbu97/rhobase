@@ -100,7 +100,7 @@ const Backgroud = () => {
   );
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-[radial-gradient(circle, #000000, #000000 50%, #75FBC8 100%)]  -z-1">
+    <div className="fixed bg-black top-0 left-0 w-full h-full bg-[radial-gradient(circle, #000000, #000000 50%, #75FBC8 100%)]  -z-1">
       {init ? <Particles id="tsparticles" options={options} /> : null}
     </div>
   );

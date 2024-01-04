@@ -14,11 +14,11 @@ const FeatureCard = () => {
       <div className="px-6 py-4 flex items-center space-x-3">
         {/* Logo SVG */}
         <Image src="/rho.svg" width={30} height={30} alt="Rhobase" />
-        <div className="font-bold text-2xl mb-2">Rhobase</div>
+        <div className="font-bold text-2xl mb-2 text-customCyan">Rhobase</div>
       </div>
       <ul className="list-disc marker:text-indigo-400 pl-5">
         {features.map((feature, index) => (
-          <li key={index}>{feature.text}</li>
+          <li key={index} className="text-white">{feature.text}</li>
         ))}
       </ul>
     </div>
