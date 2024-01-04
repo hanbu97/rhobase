@@ -19,8 +19,8 @@ export const Features = () => {
 
   const text1Opacity = useTransform(
     scrollYProgress,
-    [0.3, 0.4, 0.5],
-    [0, 1, 0]
+    [0.3, 0.35, 0.45, 0.5],
+    [0, 1, 1, 0]
   );
   const text1Y = useTransform(
     scrollYProgress,
@@ -30,8 +30,8 @@ export const Features = () => {
 
   const text2Opacity = useTransform(
     scrollYProgress,
-    [0.5, 0.6, 0.7],
-    [0, 1, 0]
+    [0.5, 0.55, 0.65, 0.7],
+    [0, 1, 1, 0]
   );
   const text2Y = useTransform(
     scrollYProgress,
@@ -41,14 +41,16 @@ export const Features = () => {
 
   const text3Opacity = useTransform(
     scrollYProgress,
-    [0.7, 0.8, 0.9],
-    [0, 1, 0]
+    [0.7, 0.75, 0.85, 0.9],
+    [0, 1, 1, 0]
   );
   const text3Y = useTransform(
     scrollYProgress,
-    [0.7, 0.8, 0.9],
+    [0.7, 80., 0.9],
     ["30px", "0px", "-30px"]
   );
+
+  const buttonOpacity = useTransform(scrollYProgress, [0.9, 1.0], [0, 1]);
 
   return (
     <section
@@ -78,12 +80,10 @@ export const Features = () => {
             opacity: text1Opacity,
             "--y": text1Y,
           })}
-          className="translate-y-centered-offset absolute top-1/2 left-0"
+          className="translate-y-centered-offset absolute top-1/2 left-0 text-2xl"
         >
-          <span className="text-primary">Preconfigured environments</span>
-          <br />
-          We detect your environment so you don&apos;t need to fiddle with
-          configuration files.
+          <span className="text-primary text-4xl font-bold text-customCyan block mb-4">Decentralized Identity</span>
+          <span className="text-white leading-8">Establish and manage your digital identity, protect your online privacy and security.</span>
         </motion.p>
         <motion.p
           style={stylesWithCssVar({
@@ -92,9 +92,8 @@ export const Features = () => {
           })}
           className="translate-y-centered-offset absolute top-1/2 left-0"
         >
-          <span className="text-primary">Command Pallete</span>
-          <br />
-          Access and complete any action in seconds with the command palette.
+          <span className="text-primary text-4xl font-bold text-customCyan block mb-4">Payment Solutions</span>
+          <span className="text-white leading-8">Focusing on privacy and user experience, guarantees secure, smooth transactions.</span>
         </motion.p>
         <motion.p
           style={stylesWithCssVar({
@@ -103,12 +102,17 @@ export const Features = () => {
           })}
           className="translate-y-centered-offset absolute top-1/2 left-0"
         >
-          <span className="text-primary">Devtools</span>
-          <br />
-          We&apos;ve bundled useful tools to help you get your work done faster
-          and more efficiently.
+          <span className="text-primary text-4xl font-bold text-customCyan block mb-4">Development Tools</span>
+          <span className="text-white leading-8">Easy-to-use developer toolkit for building scalable decentralized applications</span>
         </motion.p>
       </div>
-    </section>
+      <motion.button
+        style={{ opacity: buttonOpacity }}
+        transition={{ duration: 0.5 }}
+        className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-customCyan font-bold text-black py-3 px-6 rounded"
+      >
+        BUIDL NOW
+      </motion.button>
+    </section >
   );
 };
