@@ -89,9 +89,9 @@ export const HeroBar = () => {
             <a href="#" className="text-white font-semibold hover:underline">
               Products
             </a>
-            <a href="#" className="text-white font-semibold hover:underline">
+            {/* <a href="#" className="text-white font-semibold hover:underline">
               Developer
-            </a>
+            </a> */}
             <a href="#" className="text-white font-semibold hover:underline">
               Roadmap
             </a>
