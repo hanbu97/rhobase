@@ -92,7 +92,7 @@ export const HeroBar = () => {
             {/* <a href="#" className="text-white font-semibold hover:underline">
               Developer
             </a> */}
-            <a href="#" className="text-white font-semibold hover:underline">
+            <a href="https://rhobase.odoo.com/en/my/projects/1?access_token=f455b6c6-5617-40f4-91c0-5fced0e7717d" className="text-white font-semibold hover:underline">
               Roadmap
             </a>
           </div>
