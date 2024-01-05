@@ -8,9 +8,9 @@ import { loadSlim } from "@tsparticles/slim";
 const Backgroud = () => {
   const [init, setInit] = useState(false);
 
-  const particlesLoaded = (container: Container) => {
-    console.log("Particles Loaded:", container);
-  };
+  // const particlesLoaded = (container: Container) => {
+  //   console.log("Particles Loaded:", container);
+  // };
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
