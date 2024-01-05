@@ -1,13 +1,15 @@
+import Link from "next/link";
 import React from "react";
 
 const AuthComponent = () => {
+
   return (
     <div className="bg-white shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4 flex flex-col z-0">
       <div className="mb-4">
         <h1 className="text-xl font-bold mb-2 text-black">
           Create your account
         </h1>
-        <p className="text-sm text-gray-800 mb-4">Continue to Rhobase</p>
+        <p className="text-sm text-gray-800 mb-4">Continue to Rhobase Dashboard</p>
         <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
           Continue with GitHub
         </button>
@@ -43,9 +45,11 @@ const AuthComponent = () => {
         />
       </div>
       <div className="flex items-center justify-between">
-        <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
-          Continue
-        </button>
+        <Link href="/organization/rhobase">
+          <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+            Continue
+          </button>
+        </Link>
       </div>
     </div>
   );

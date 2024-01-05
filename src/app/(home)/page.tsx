@@ -6,6 +6,7 @@ import { Calendar } from "lucide-react";
 import Image from "next/image";
 import { StreamlinedExperience } from "./_sections/streamlined-experience";
 import { Features } from "./_sections/features";
+import { HeroBar } from "./_components/hero_bar";
 
 const HomePage = () => {
   const taglineStyle = {
@@ -84,6 +85,7 @@ const HomePage = () => {
 
   return (
     <div className="flex flex-col overflow-x-clip">
+      <HeroBar />
       <div className="flex flex-col h-screen">
         <div className="flex-grow flex">
           <div className="w-3/4 flex items-center justify-center pl-20 pr-10 py-10">
@@ -128,9 +130,8 @@ const HomePage = () => {
             {newsItems.map((news, index) => (
               <div
                 key={news.id}
-                className={`mb-4 flex pl-10 pr-10 pb-6 border-b border-slate-600 ${
-                  index == 0 ? "pt-6 border-t border-slate-600" : ""
-                }`}
+                className={`mb-4 flex pl-10 pr-10 pb-6 border-b border-slate-600 ${index == 0 ? "pt-6 border-t border-slate-600" : ""
+                  }`}
               >
                 {/* Add a top border to all items except the first */}
                 <div className="w-24 h-16 relative mr-3">
